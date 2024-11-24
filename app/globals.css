@@ -25,3 +25,314 @@ body {
     text-wrap: balance;
   }
 }
+
+input[type="date"], input[type="month"], .yearpicker{
+  min-width: fit-content !important;
+  width: 160px !important;
+  margin: 0px 10px 0 0;  
+}
+
+.main{
+  position: absolute;
+  left: 15vw;
+  width: 85vw;
+  display: flex;
+  padding: 10px;
+}
+
+.main-content{
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.LoadLayout{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.7);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.LoadLayout > div{
+  width: 10%;
+  height: 20%;
+}
+
+#Pages{
+  position: fixed;
+  width: 15vw;
+  height: 100vh;
+  background-color: rgb(194 83 77);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Pages > a{
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 5px;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+#Pages > a:hover{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+#Pages > a:first-child{
+  margin-top: 10vh;
+}
+
+#Pages::after{
+  content: '';
+  display: flex;
+  background-image: url(../pic/KTIKY2.png);
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: 100vh;
+  background-size: contain;
+}
+
+#Pages > a::before{
+  
+}
+
+.Group > div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.No{
+  border: 1px solid black;
+  width: 25px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horse{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mb20{
+  display: none;
+}
+
+.VideoBox{
+  width: 80%;
+}
+
+
+.RaceMovieInfoArea{
+  display: none;
+}
+
+.pickup{
+  border: 1px solid lightgray;
+  margin: 0px 30px;
+  border-radius: 15px;
+  padding: 2px 20px;
+  width: 60%;
+  max-height: 300px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.Waku1 {
+  background: #ffffff;
+  color: #444444 !important;
+}
+
+.Waku2 {
+  background: #444444;
+  color: #ffffff !important;
+}
+
+.Waku3 {
+  background: #e95556;
+  color: #ffffff !important;
+}
+
+.Waku4 {
+  background: #416cba;
+  color: #ffffff !important;
+}
+
+.Waku5 {
+  background: #e7c52c;
+  color: #ffffff !important;
+}
+
+.Waku6 {
+  background: #45af4c;
+  color: #ffffff !important;
+}
+
+.Waku7 {
+  background: #ee9738;
+  color: #ffffff !important;
+}
+
+.Waku8 {
+  background: #ef8fa0;
+  color: #ffffff !important;
+}
+
+.weekRaces{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.RaceList{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.Race_Num{
+  color: white;
+  background-color: #416cba;
+  border: 1px solid lightblue;
+  width: 25px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.race-item{
+  display: flex;
+  align-items: center;
+}
+
+.race-item > a {
+  color: #ff1e1e !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+.race-info-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.race-info-container > div{
+  display: flex;
+  margin: 0px;
+}
+
+.race-info-container > div > p {
+  margin: 0 12px;
+}
+
+.react-datepicker-wrapper{
+  border: 1px solid lightgray !important;
+  border-radius: 5px !important;
+  font-size: 23px !important;
+  width: fit-content !important;
+  padding: 3px !important;
+}
+
+.react-datepicker__close-icon{
+  display: none !important;
+}
+
+.pickButton{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.saturday {
+  color: blue; /* 土曜日は青 */
+}
+
+.sunday {
+  color: red; /* 日曜日は赤 */
+}
+
+.popup-message {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.Shutuba_Table{
+  width: 85vw;
+  text-align: center;
+}
+
+.Shutuba_Table > thead > tr {
+  border-bottom: 3px solid lightgray;
+}
+
+.Shutuba_Table > thead > tr > th:first-child{
+  width: 40px;
+}
+
+.Shutuba_Table > thead > tr > th:nth-child(2){
+  width: 40px;
+}
+
+.Shutuba_Table > thead > tr > th:nth-child(3){
+  width: 240px;
+}
+
+.Shutuba_Table > tbody > tr:nth-child(even){
+  background-color: #ededed;
+}
+
+.Shutuba_HorseInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.Shutuba_HorseInfo > li:first-child{
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.Shutuba_HorseInfo > li{
+  width: 50%;
+}
